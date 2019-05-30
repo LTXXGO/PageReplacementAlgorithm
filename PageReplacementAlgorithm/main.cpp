@@ -13,6 +13,27 @@
 using namespace std;
 
 int main() {
-    
+    //pages.input();
+    pages.append(7);
+    pages.append(0);
+    pages.append(1);
+    pages.append(2);
+    pages.append(0);
+    pages.append(3);
+    pages.append(0);
+    pages.append(4);
+    pages.append(2);
+    pages.append(3);
+    pages.append(0);
+    pages.append(3);
+    pages.append(2);
+    pages.append(1);
+    pages.append(2);
+    pages.append(0);
+    pages.append(1);
+    pages.append(7);
+    pages.append(0);
+    pages.append(1);
+    Optimal();
     return 0;
 }
