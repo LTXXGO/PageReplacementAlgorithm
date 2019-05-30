@@ -34,6 +34,11 @@ int main() {
     pages.append(7);
     pages.append(0);
     pages.append(1);
+    cout << "Optimal: " << endl;
     Optimal();
+    cout << "FIFO: " << endl;
+    FIFO();
+    cout << "LRU: " << endl;
+    LRU();
     return 0;
 }

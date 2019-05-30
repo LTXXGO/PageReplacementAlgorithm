@@ -22,4 +22,8 @@ Array<int> blocks;
 // 缺页数初始化为全部, 未产生缺页中断时 -1
 int numberOfLackPages = pages.length();
 
+// 计算缺页率
+float calculatePageFaultRate() {
+    return float(numberOfLackPages) / float(pages.length());
+}
 #endif /* Pages_h */

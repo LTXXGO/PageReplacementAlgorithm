@@ -38,6 +38,7 @@ public:
     void insert(T e, int p);//插入指定序号的元素，将元素e插入在下标为p的位置
     T remove(int p);//删除指定序号元素，返回其数据备份
     T operator [] (int i) { return elem[i]; }//通过下标读取表元
+    void clear();//清除所有数据并收回内存空间重新分配
 
     void sort();//排序接口，随机使用下列排序方法中的一种
     void mergingSort(int low, int high);//归并排序
@@ -57,6 +58,7 @@ public:
     T getMax(int low, int high);//在区间[i, j)中获取最大值
     
     int sequentialSearch(T e);//顺序查找是否有数据为e的元素并返回其下标
+    int reverseSearch(T e);//倒序查找是否有数据为e的元素并返回其下标
     int binarySearch(T e);//折半查找是否有数据为e的元素并返回其下标
     
     void reverse();//表元素逆置
@@ -133,6 +135,13 @@ T Array<T>::remove(int p) {
         elem[i] = elem[i + 1];
     }
     size--;
+}
+
+template <typename T>
+void Array<T>::clear() {
+    size = 0;
+    capacity = DEFAULTCAP;
+    elem = new T[capacity];
 }
 
 // MARK: - 排序算法
@@ -241,6 +250,16 @@ template <typename T>
 int Array<T>::sequentialSearch(T e) {
     for(int i = 0; i < size; i++) {
         if(elem[i] == e)
+            return i;
+    }
+    return -1;
+}
+
+// 倒序查找
+template <typename T>
+int Array<T>::reverseSearch(T e) {
+    for (int i = size - 1; i >= 0; i--) {
+        if (elem[i] == e)
             return i;
     }
     return -1;
