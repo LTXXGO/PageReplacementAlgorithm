@@ -13,7 +13,6 @@
 using namespace std;
 
 int main() {
-    //pages.input();
     pages.append(7);
     pages.append(0);
     pages.append(1);
@@ -34,11 +33,19 @@ int main() {
     pages.append(7);
     pages.append(0);
     pages.append(1);
-    cout << "Optimal: " << endl;
+    
+    // 取消下列注释以从键盘输入数据
+    /*
+     pages.input();
+     cout << "输入系统分配的物理块数: ";
+     cin >> numberOfBlocks;
+     */
+    
+    cout << "Optimal / 最佳置换算法: " << endl;
     Optimal();
-    cout << "FIFO: " << endl;
+    cout << "FIFO / 先进先出页面置换算法: " << endl;
     FIFO();
-    cout << "LRU: " << endl;
+    cout << "LRU / 最近最久未使用置换算法: " << endl;
     LRU();
     return 0;
 }

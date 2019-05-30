@@ -28,6 +28,8 @@
 		BEA90A62229FB0A400485661 /* Pages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pages.h; sourceTree = "<group>"; };
 		BEA90A63229FB54A00485661 /* PageReplacementAlgorithm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageReplacementAlgorithm.h; sourceTree = "<group>"; };
 		BEA90A64229FCDE000485661 /* Array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Array.h; sourceTree = "<group>"; };
+		BEA90A65229FFAAC00485661 /* Martix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Martix.h; sourceTree = "<group>"; };
+		BEA90A6822A0051200485661 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		BEA90A4F229FB07200485661 = {
 			isa = PBXGroup;
 			children = (
+				BEA90A6822A0051200485661 /* README.md */,
 				BEA90A5A229FB07200485661 /* PageReplacementAlgorithm */,
 				BEA90A59229FB07200485661 /* Products */,
 			);
@@ -60,12 +63,29 @@
 		BEA90A5A229FB07200485661 /* PageReplacementAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				BEA90A67229FFAF300485661 /* main */,
+				BEA90A66229FFAB600485661 /* assist */,
+			);
+			path = PageReplacementAlgorithm;
+			sourceTree = "<group>";
+		};
+		BEA90A66229FFAB600485661 /* assist */ = {
+			isa = PBXGroup;
+			children = (
+				BEA90A64229FCDE000485661 /* Array.h */,
+				BEA90A65229FFAAC00485661 /* Martix.h */,
+			);
+			path = assist;
+			sourceTree = "<group>";
+		};
+		BEA90A67229FFAF300485661 /* main */ = {
+			isa = PBXGroup;
+			children = (
 				BEA90A5B229FB07200485661 /* main.cpp */,
 				BEA90A62229FB0A400485661 /* Pages.h */,
 				BEA90A63229FB54A00485661 /* PageReplacementAlgorithm.h */,
-				BEA90A64229FCDE000485661 /* Array.h */,
 			);
-			path = PageReplacementAlgorithm;
+			path = main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

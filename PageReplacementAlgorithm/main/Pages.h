@@ -14,7 +14,7 @@
 using namespace std;
 
 // 物理块数
-int numberOfPhysicalBlock = 3;
+int numberOfBlocks = 3;
 // 页面序列
 Array<int> pages;
 // 内存物理块
