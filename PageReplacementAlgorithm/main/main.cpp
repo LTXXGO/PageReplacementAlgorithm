@@ -36,10 +36,20 @@ int main() {
     
     // 取消下列注释以从键盘输入数据
     /*
-     pages.input();
-     cout << "输入系统分配的物理块数: ";
-     cin >> numberOfBlocks;
-     */
+    pages.input();
+    cout << "输入系统分配的物理块数: ";
+    cin >> numberOfBlocks;
+    cout << "输入页面数: ";
+    int numberOfPages;
+    cin >> numberOfPages;
+    cout << "按序输入页面序号: ";
+    int page;
+    for (int i = 0; i < numberOfPages; i++) {
+        cin >> page;
+        pages.append(page);
+    }
+    */
+    
     
     cout << "Optimal / 最佳置换算法: " << endl;
     Optimal();
