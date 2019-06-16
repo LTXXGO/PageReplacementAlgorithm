@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BE4786A722B5D95000F1705D /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BEA90A58229FB07200485661 /* PageReplacementAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PageReplacementAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA90A5B229FB07200485661 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BEA90A62229FB0A400485661 /* Pages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pages.h; sourceTree = "<group>"; };
@@ -46,6 +47,7 @@
 		BEA90A4F229FB07200485661 = {
 			isa = PBXGroup;
 			children = (
+				BE4786A722B5D95000F1705D /* LICENSE */,
 				BEA90A6822A0051200485661 /* README.md */,
 				BEA90A5A229FB07200485661 /* PageReplacementAlgorithm */,
 				BEA90A59229FB07200485661 /* Products */,
